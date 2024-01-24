@@ -1,0 +1,24 @@
+.card{
+    border: none;
+    width: 100%;
+    padding: 40px;
+    position: relative;
+    top: 0%;
+    text-align: center;
+    background: hsla(205, 46%, 30%, 1);
+    background: linear-gradient(90deg,rgb(6, 98, 18),rgb(5, 2, 12) 100%);
+}
+
+.card h1,
+h4{
+    color: #fff;
+}
+
+label{
+    color: #fff;
+}
+.container{
+    background-color: linear-gradient(90deg,rgb(112, 41, 98),rgb(10, 1, 19) 100%);
+    z-index: -1;
+    margin: 150px;
+}

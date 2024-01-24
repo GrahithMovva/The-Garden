@@ -1,0 +1,25 @@
+<nav>
+    <b class = plants routerLink="/admin-plant-detail">Plants</b>
+    <b class = login routerLink="/login">Logout</b>
+    <b class = request routerLink="/admin-request">Requests</b>
+  </nav>
+  <h2>Our Plants</h2>
+  <div>
+    <label for="new-Plant">Plant name: </label>
+    <input id="new-Plant" #PlantName />
+  
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button type="button" class="add-button" (click)="add(PlantName.value); PlantName.value=''" style="color: white ;">
+      Add Plant
+    </button>
+  </div>
+  
+  <ul class="Plants">
+    <li *ngFor="let Plant of Plants">
+      <a routerLink="/admin-plant-detail/{{Plant.id}}">
+        <span class="badge">{{Plant.id}}</span> {{Plant.name}}
+      </a>
+      <button type="button" class="delete" title="delete Plant"
+        (click)="delete(Plant)">x</button>
+    </li>
+  </ul>

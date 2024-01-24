@@ -1,0 +1,157 @@
+/* HeroesComponent's private CSS styles */
+.Plants {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+  }
+  
+  .Plants li {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .Plants li:hover {
+    left: .1em;
+  }
+  
+  .Plants a {
+    color: #333;
+    text-decoration: none;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+  }
+  
+  .Plants a:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+  }
+  
+  .Plants a:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+  
+  .Plants .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    min-width: 16px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .add-button {
+   padding: .5rem 1.5rem;
+   font-size: 1rem;
+   margin-bottom: 2rem;
+  }
+  
+  .add-button:hover {
+    color: white;
+    background-color: #42545C;
+  }
+  
+  button.delete {
+    position: absolute;
+    left: 210px;
+    top: 5px;
+    background-color: white;
+    color:  #525252;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 1px 10px 3px 10px;
+  }
+  
+  button.delete:hover {
+    background-color: #525252;
+    color: white;
+  }
+  
+  h2{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: brown;
+    
+  }
+  c {
+    background-color: #2037a8;
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    margin: .5rem auto;
+    box-sizing: border-box;
+  
+  
+    /* flexbox */
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  
+  
+  nav b {
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: #3d3d3d;
+    border-radius: 4px;
+  }
+  
+  nav b:hover {
+    color: white;
+    background-color: #42545C;
+  
+  }
+  nav b:active {
+    background-color: black;
+  }
+  
+  
+  .dashboard{
+  margin: 0 85rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 1 1 1 1;
+  border: 1px solid black;
+  }
+  
+  .plants{
+  border: 1px solid black;
+  }
+
+  .login{
+    border: 1px solid black;
+    }

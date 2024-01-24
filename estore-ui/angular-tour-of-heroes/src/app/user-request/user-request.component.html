@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Garden</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="user-request.component.css">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <header>
+                <a routerLink="/dashboard" class="logo">The<span>Garden</span></a>
+                <nav>
+
+                    <ul>
+                        <li><a style="color: black;" routerLink="/login">Logout</a></li>
+                        <li><a style="color: black;" routerLink="/Plants">Plants</a></li>
+                        <li><a style="color: black;" routerLink="/shopping-cart">Cart</a></li>
+                        <li><a style="color: black;" routerLink="/dashboard">Home</a></li>
+                        <li><a style="color: black;" routerLink="/user-request">Request</a></li>
+                    </ul>
+
+                </nav>
+
+            </header>
+        </div>
+            <div class="card">
+              <input id="new-Plant" #PlantName placeholder="Plant Name" />
+            </div>
+            <button class="btn" (click)="add(PlantName.value); PlantName.value=''">
+              Send Request
+            </button>
+    </body>
+
+</html>
+
+
+
+<!-- <nav>
+    <b class = dashboard routerLink="/dashboard">Dashboard</b>
+    <b class = plants routerLink="/Plants">Plants</b>
+    <b class = login routerLink="/login">Logout</b>
+  </nav>
+<h2>Our Plants</h2>
+  <div>
+    <label for="new-Plant">Plant name: </label>
+    <input id="new-Plant" #PlantName />
+  
+    
+    <button type="button" class="add-button" (click)="add(PlantName.value); PlantName.value=''">
+      Send Request
+    </button>
+  </div> -->

@@ -1,0 +1,19 @@
+<nav>
+    <b class = plants routerLink="/admin-plant">Plants</b>
+    <b class = login routerLink="/login">Logout</b>
+  </nav>
+  <h2>Our Plants</h2>
+ 
+  
+  <ul class="Plants">
+    <li *ngFor="let Plant of Plants">
+      <a>
+        <span class="badge">{{Plant.id}}</span> {{Plant.name}}
+      </a>
+      <button type="button" class="delete" title="delete Plant"
+        (click)="delete(Plant)">x</button>
+      <button type="button" class="accept" title="accept Plant"
+        (click)="add(Plant)" style="color: white ;">accept</button>
+
+    </li>
+  </ul>

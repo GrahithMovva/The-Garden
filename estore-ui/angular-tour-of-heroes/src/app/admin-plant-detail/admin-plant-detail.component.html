@@ -1,0 +1,23 @@
+<nav>
+    <b class = plants routerLink="/admin-plant">Plants</b>
+    <b class = login routerLink="/login">Logout</b>
+  </nav>
+  <div *ngIf="Plant">
+    <h2>{{Plant.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{Plant.id}}</div>
+    <div>
+      <label for="Plant-name">Plant name: </label>
+      <input id="Plant-name" [(ngModel)]="Plant.name" placeholder="Plant name"/>
+    </div>
+    <div>
+        <label for="Plant-price"> Price: </label>
+        <input id="plant-price" [(ngModel)]="Plant.price" placeholder="Plant Price">
+    </div>
+    <div>
+        <label for="Plant-quantity">Plant Quantity</label>
+        <input id="Plant-quantity" [(ngModel)]="Plant.quantity" placeholder="Plant Quantity"/>
+        
+    <div><span>user: </span>{{username}}</div>
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  </div>

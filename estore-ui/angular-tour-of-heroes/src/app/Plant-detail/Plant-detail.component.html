@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Garden</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Plant-detail.component.css">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <header>
+                <a routerLink="/dashboard" class="logo">The<span>Garden</span></a>
+                <nav>
+
+                    <ul>
+                        <li><a style="color: black;" routerLink="/login">Logout</a></li>
+                        <li><a style="color: black;" routerLink="/Plants">Plants</a></li>
+                        <li><a style="color: black;" routerLink="/shopping-cart">Cart</a></li>
+                        <li><a style="color: black;" routerLink="/dashboard">Home</a></li>
+                        <li><a style="color: black;" routerLink="/user-request">Request</a></li>
+                    </ul>
+
+                </nav>
+
+            </header>
+        </div>
+
+  
+      <div *ngIf="Plant" style="text-align:center ;">
+        <div class="card">
+          <img src="assets/filler.jpg" alt="Plant" height="300em" style="width:20% ;"  >
+          <h2>{{Plant.name}}</h2>
+            <p class="price">$ {{Plant.price}}</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, aliquid.</p>
+            <p><button (click)="addtoShoppingCart()">Add to Cart</button></p>
+        </div>
+      </div>
+         
+
+    </body>
+
+</html>
+
+<!-- <nav>
+  <b class = dashboard routerLink="/dashboard">Dashboard</b>
+  <b class = plants routerLink="/Plants">Plants</b>
+  <c class = login routerLink="/login">Logout</c>
+  <c class = cart routerLink="/shopping-cart">Cart</c>
+</nav>
+<div *ngIf="Plant">
+  <h2>{{Plant.name | uppercase}} Details</h2>
+  <div><span>Plant Name: </span>{{Plant.name}}</div>
+  <div><span>Price: </span>{{Plant.price}}</div>
+  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="addtoShoppingCart()">Add to Cart</button>
+</div> -->
